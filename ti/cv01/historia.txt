@@ -1,0 +1,18 @@
+    1  cd ~/web/ti
+    2  git clone https://github.com/tuke-fberg-stehlikova/technologie-internetu-5k-cv01-jan-novak.git cv01
+    3  cd ~/web/ti
+    4  git clone https://github.com/tuke-fberg-stehlikova/technologie-internetu-5k-cv01-jan-novak.git cv01
+    5  code-server --install-extension Natizyskunk.sftp
+    6  cd ~/pieskovisko
+    7  mkdir -p projekt/css projekt/img
+    8  touch projekt/index.html poznamky.txt
+    9  ls -la
+   10  mkdir -p ~/pieskovisko
+   11  mv projekt poznamky.txt ~/pieskovisko/
+   12  cd ~/pieskovisko
+   13  ls -la
+   14  ls -la projekt
+   15  vi o-mne.txt
+   16  vi o-mne.txt
+   17  cat o-mne.txt
+   18  history > ~/pieskovisko/historia.txt
