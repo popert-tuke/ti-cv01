@@ -1,0 +1,13 @@
+schema: "classroom50/repo-config/v1"
+classroom: "technologie-internetu-5k"
+assignment: "cv03"
+secret: "tcc8jmx0"
+owner:
+  username: "popert-tuke"
+  id: 332508129
+  accepted_at: "2026-10-15T10:38:54Z"
+source:
+  owner: "tuke-fberg-stehlikova"
+  owner_id: 329977877
+  repo: "ti-cv03"
+  branch: "main"

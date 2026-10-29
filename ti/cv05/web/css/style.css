@@ -1,0 +1,38 @@
+/*
+   Zmazal som pôvodné pravidlá pre globálny layout (box-sizing, flexbox kontajnery hlavičky,
+   vlastné pozicovanie menu, šírky sekcií a štýly formulárov), pretože tieto vlastnosti
+   teraz kompletne pokrýva Bootstrap 5.3 pomocou svojich vstavaných tried (navbar, container, row, form-control, atď.).
+*/
+
+/* Odsadenie tela stránky zhora kvôli fixnému menu (fixed-top) */
+body {
+  padding-top: 70px;
+}
+
+/* Farba pre nadpisy, ak nie sú plne pokryté Bootstrapom */
+h2 {
+  color: #2980b9;
+}
+
+/* Vlastná trieda .zvyraznene, ktorú Bootstrap nerieši */
+.zvyraznene {
+  background-color: #fff3cd;
+  border-left: 4px solid #ffeba2;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Úprava farby menu (Navbar) podľa vlastného dizajnu */
+.navbar {
+  background-color: #2c3e50 !important;
+}
+
+/* Efekt pre odkazy v menu pri prejdení myšou */
+.navbar-nav .nav-link:hover {
+  color: #3498db !important;
+}
+
+/* Vlastný obrázok prispôsobený rámikom */
+.projekt-img {
+  border: 3px solid #2980b9;
+}

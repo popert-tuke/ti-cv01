@@ -2,17 +2,35 @@
     2  git clone https://github.com/tuke-fberg-stehlikova/technologie-internetu-5k-cv01-jan-novak.git cv01
     3  cd ~/web/ti
     4  git clone https://github.com/tuke-fberg-stehlikova/technologie-internetu-5k-cv01-jan-novak.git cv01
-    5  code-server --install-extension Natizyskunk.sftp
-    6  cd ~/pieskovisko
-    7  mkdir -p projekt/css projekt/img
-    8  touch projekt/index.html poznamky.txt
-    9  ls -la
-   10  mkdir -p ~/pieskovisko
-   11  mv projekt poznamky.txt ~/pieskovisko/
-   12  cd ~/pieskovisko
-   13  ls -la
-   14  ls -la projekt
-   15  vi o-mne.txt
-   16  vi o-mne.txt
-   17  cat o-mne.txt
-   18  history > ~/pieskovisko/historia.txt
+    5  Bash
+    6  git add .
+    7  git commit -m "cv01#
+git commit -m "cv01"
+
+
+    8  cd ~/web/ti/cv01
+    9  git add .
+   10  git commit -m "cv01"
+   11  git push origin main
+   12  git remote remove origin
+   13  git remote add origin https://github.com/popert-tuke/ti-cv01.git
+   14  git push -u origin main
+   15  cd ~/web/ti
+   16  git clone https://github.com/tuke-fberg-stehlikova/technologie-internetu-5k-cv01-popert-tuke.git
+   17  ls
+   18  mv technologie-internetu-5k-cv01-popert-tuke/ cv01
+   19  code-server --install-extension Natizyskunk.sftp
+   20  mkdir -p ~/pieskovisko/projekt/css ~/pieskovisko/projekt/img
+   21  touch ~/pieskovisko/projekt/index.html ~/pieskovisko/poznamky.txt
+   22  ls -la ~/pieskovisko
+   23  ls -la ~/pieskovisko/projekt
+   24  cp ~/pieskovisko/poznamky.txt ~/pieskovisko/kopia.txt
+   25  ls -la ~/pieskovisko
+   26  mv ~/pieskovisko/kopia.txt ~/pieskovisko/premenovany.txt
+   27  ls -la ~/pieskovisko
+   28  rm ~/pieskovisko/premenovany.txt
+   29  ls -la ~/pieskovisko
+   30  vi ~/pieskovisko/o-mne.txt
+   31  vi ~/pieskovisko/o-mne.txt
+   32  cat ~/pieskovisko/o-mne.txt
+   33  history > ~/pieskovisko/historia.txt

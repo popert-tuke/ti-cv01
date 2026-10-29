@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Osobný blog - Hlavná stránka</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Vlastné CSS (pripojené až za Bootstrapom) -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Komentár: Navbar (navbar, navbar-expand-md, fixed-top, bg-dark, navbar-dark) - vytvorí fixné responzívne menu na vrchu obrazovky s tmavým pozadím -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Môj Osobný Blog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Prepnúť navigáciu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Domov</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Kontakt / Dotazník</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Komentár: Hlavný obsah (container) - obmedzí šírku obsahu a vycentruje ho s vonkajšími okrajmi -->
+    <main class="container my-5">
+      <!-- Komentár: Sekcia (position-relative, p-4, mb-4, bg-light, rounded, shadow-sm) - zabezpečuje vnútorný a vonkajší odstup, svetlé pozadie, zaoblenie a tieň -->
+      <section
+        id="o-projekte"
+        class="position-relative p-4 mb-4 bg-light rounded shadow-sm"
+      >
+        <span class="position-absolute top-0 end-0 m-3 badge bg-danger"
+          >NOVINKA</span
+        >
+        <h2>O mojom projekte</h2>
+        <p>
+          Vitajte na mojej stránke venovanej vývoju webových aplikácií a mojím
+          záľubám.
+        </p>
+        <p class="zvyraznene">
+          Tento text je zvýraznený pomocou CSS triedy .zvyraznene.
+        </p>
+      </section>
+
+      <!-- Komentár: Sekcia s obrázkom (p-4, mb-4, bg-light, rounded) -->
+      <section id="hlavna-sekcija" class="p-4 mb-4 bg-light rounded shadow-sm">
+        <h2>Obrázok a ukážka</h2>
+        <p>
+          Nižšie sa nachádza priložený obrázok s vlastným rámikom a odstupom.
+        </p>
+        <!-- Komentár: Obrázok (img-fluid) - zabezpečí responzívnosť obrázka, aby nepretečie mimo kontajner -->
+        <img
+          src="img/obrazok.jpg"
+          alt="Ukážkový obrázok projektu"
+          class="img-fluid projekt-img rounded"
+        />
+      </section>
+
+      <!-- Komentár: Sekcia s mriežkou a kartami (row, g-4, col-md-6, col-lg-4, card, h-100) - mriežka rozdeľuje karty responzívne na 2 alebo 3 stĺpce, karty majú rovnakú výšku (h-100) -->
+      <section id="karty" class="py-3">
+        <h2 class="mb-4">Záujmy a témy</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Webový vývoj</h5>
+                <p class="card-text">
+                  Tvorba moderných webových stránok pomocou HTML, CSS a
+                  Bootstrapu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Dizajn</h5>
+                <p class="card-text">
+                  Návrh používateľského rozhrania a štýlové prvky pre lepšiu
+                  prehľadnosť.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Technológie</h5>
+                <p class="card-text">
+                  Nové trendy v oblasti programovania a moderných nástrojov.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Komentár: Sekcia s tabuľkou (table-responsive, table, table-striped) - obal zabezpečuje responzívnosť tabuľky na mobiloch, triedy štýlujú tabuľku a striedavé pozadie riadkov -->
+      <section id="tabulka" class="py-3">
+        <h2 class="mb-3">Prehľad údajov</h2>
+        <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Kategória</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Webový vývoj</td>
+                <td>Aktivne</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Dizajn</td>
+                <td>V príprave</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- Komentár: Pätička (bg-dark, text-white, text-center, py-3, container) - tmavé pozadie, biely stredovo zarovnaný text s vnútorným odsadením -->
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+      <div class="container">
+        <p class="mb-0">
+          &copy; 2026 Mykhailo Perepichai. Všetky práva vyhradené.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN (pred </body>) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
